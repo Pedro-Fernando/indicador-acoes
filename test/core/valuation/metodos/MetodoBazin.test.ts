@@ -1,4 +1,6 @@
-import MetodoBazin from "@/core/acoes/metodos/MetodoBazin"
+import MetodoBazin from "@/core/valuation/metodos/MetodoBazin"
+
+
 
 test('Deve calcular o preço justo com a metodologia Bazin.', () => {
     const dividendos = [0.65, 0.39, 0.61, 0.58, 0.56, 0.2]

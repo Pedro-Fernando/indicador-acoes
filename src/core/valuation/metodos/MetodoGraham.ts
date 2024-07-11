@@ -6,8 +6,4 @@ export default class MetodoGraham {
         return parseFloat(valorIntrinseco.toFixed(2));
     }
 
-    public static calcularMargemSegurancaEmPorcentagem(preco: number, valorIntrinseco: number): number {
-        const margemSeguranca = ((valorIntrinseco - preco) / preco) * 100;
-        return parseFloat(margemSeguranca.toFixed(2));
-    }
 }
