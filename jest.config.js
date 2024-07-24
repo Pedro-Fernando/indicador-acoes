@@ -1,9 +1,11 @@
 module.exports = {
-    preset: 'ts-jest',
-    testEnvironment: 'node',
-    testMatch: ['**/test/**/*.test.ts'],
-    collectCoverage: true,
-    moduleNameMapper:{
-        '^@/(.*)$': '<rootDir>/src/$1'
-    }
-}
+    preset: "ts-jest",
+    testEnvironment: "node",
+    moduleNameMapper: {
+        "^@/(.*)$": "<rootDir>/src/$1",
+    },
+    transform: {
+        "^.+\\.ts?$": "ts-jest",
+    },
+    transformIgnorePatterns: ["node_modules/(?!@ngrx|(?!deck.gl)|ng-dynamic)"],
+};
